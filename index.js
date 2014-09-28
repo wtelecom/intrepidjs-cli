@@ -1,4 +1,4 @@
-var pkg = require(process.cwd() + '/package.json');
+var pkg = require(__dirname + '/package.json');
 var intrepidjsVersion = pkg.version;
 
 // Dummy index, only shows intrepidjs-cli version
