@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+'use strict';
+
+// IntrepidJS CLI.
+var program = require('commander'),
+    _ = require('lodash');
+
+// Set program version
+var version = require('../package').version;
+program.version(version, '-v, --version');
+
+program
+    .command('init <name>', 'Create an IntrepidJS application in the current working directory')
+    .parse(process.argv);
+
+// Print help with no args
+if (program.args.length < 1) {
+    program.help();
+}
+
+// If there is a command, make sure it's valid
+var commands = program.commands.map(function(command) {
+    return command._name;
+});
+
+if (!_.contains(commands, program.args[0])) {
+    console.log('intrepidjs: `' + program.rawArgs[2] + '` is not a intrepidjs command. See `intrepidjs --help`.');
+    console.log();
+    process.exit(1);
+}

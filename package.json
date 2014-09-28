@@ -1,0 +1,42 @@
+{
+  "name": "intrepidjs-cli",
+  "version": "0.0.1",
+  "preferGlobal": true,
+  "description": "Command line interface for installing and managing IntrepidJS",
+  "author": "Wellness Telecom",
+  "contributors": [
+    "Francisco Hidalgo <fjhidalgo@wtelecom.es>",
+    "Marcos García <mgarcia@wtelecom.es>"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "bin": {
+    "intrepidjs": "./bin/intrepidjs",
+    "intrepidjs-init": "./bin/intrepidjs-init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wtelecom/intrepidjs-cli.git"
+  },
+  "keywords": [
+    "intrepid",
+    "intrepidjs",
+    "framework"
+  ],
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {
+    "chalk": "~0.5.1",
+    "commander": "~2.2.0",
+    "lodash": "~2.4.1",
+    "npm": "~1.4.7",
+    "shelljs": "~0.3.0"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/wtelecom/intrepidjs-cli/issues"
+  }
+}

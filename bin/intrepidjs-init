@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var cli = require('../lib/cli'),
+    program = require('commander');
+
+program
+    .description('Create an IntrepidJS application in the current working directory')
+    .parse(process.argv);
+
+cli.init(program.args.length ? program.args[0] : 'intrepidjs');
