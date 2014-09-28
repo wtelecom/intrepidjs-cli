@@ -28,6 +28,7 @@
     "npm": "1.4.x"
   },
   "dependencies": {
+    "bower": "~1.3.11",
     "chalk": "~0.5.1",
     "commander": "~2.2.0",
     "lodash": "~2.4.1",
