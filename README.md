@@ -7,6 +7,7 @@ Command line interface for installing and managing <b>IntrepidJS</b>.<br />
 ## Prerequisites
   * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/).
   * MongoDB - Download and Install [MongoDB](http://docs.mongodb.org/manual/installation/).
+  * Redis - Download and Install [Redis](http://redis.io/download/).
 
 ### Tools Prerequisites
   * NPM - Node.js package manage; should be installed when you install node.js.
